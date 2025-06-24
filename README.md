@@ -161,21 +161,21 @@ J --> K[Email Notification]
 
 ---
 
-## 🗃️ Future Enhancements
-
-- Integrate GitOps (e.g., ArgoCD or FluxCD)
-- Add AI-based test case generation
-- Enhance RBAC for multi-tenant environments
-- Connect ELK for full observability
-
----
 
 ## 🧑‍💻 Author
 
 **Ashish Jain**  
 Email: [ashishxojain@gmail.com](mailto:ashishxojain@gmail.com)  
-GitHub: [@ashishxojain](https://github.com/ashishxojain)
 
+**Harsh**  
+Email: [theharsh1028@gmail.com](mailto:ashishxojain@gmail.com)  
+
+
+**Rishabh**  
+Email: [rishabh.kabra99@gmail.com](mailto:ashishxojain@gmail.com)  
+
+**Github**  
+GitHub: [@ashishxojain](https://github.com/ashishxojain)
 ---
 
 ## 📄 License
