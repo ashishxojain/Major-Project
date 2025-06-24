@@ -178,11 +178,7 @@ Email: [rishabh.kabra99@gmail.com](mailto:ashishxojain@gmail.com)
 GitHub: [@ashishxojain](https://github.com/ashishxojain)
 ---
 
-## 📄 License
 
-This project is licensed under the [MIT License](LICENSE).
-
----
 
 ## 🙏 Acknowledgements
 
