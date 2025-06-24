@@ -1,0 +1,18 @@
+# ------------ BASE IMAGE ------------ #
+FROM node:18
+
+# ------------ SET WORKING DIRECTORY ------------ #
+WORKDIR /app
+
+# ------------ INSTALL DEPENDENCIES ------------ #
+COPY package.json package-lock.json ./
+RUN npm install
+
+# ------------ COPY SOURCE CODE ------------ #
+COPY . .
+
+# ------------ EXPOSE PORT ------------ #
+EXPOSE 3000
+
+# ------------ START APPLICATION ------------ #
+CMD ["npm", "start"]

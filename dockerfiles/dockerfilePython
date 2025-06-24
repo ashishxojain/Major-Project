@@ -1,0 +1,28 @@
+# ------------ BASE IMAGE ------------ #
+FROM python:2.7
+
+# ------------ CREATE APP DIRECTORY ------------ #
+RUN mkdir -p /usr/src/app
+
+# ------------ SET WORKING DIRECTORY ------------ #
+WORKDIR /usr/src/app
+
+# ------------ INSTALL DEPENDENCIES ------------ #
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+
+# ------------ COPY APPLICATION CODE ------------ #
+COPY . .
+
+# ------------ ENVIRONMENT VARIABLES ------------ #
+# ENV APP_ENV development
+ENV PORT 8080
+
+# ------------ EXPOSE PORT ------------ #
+EXPOSE $PORT
+
+# ------------ VOLUME FOR PERSISTENT DATA ------------ #
+VOLUME ["/app-data"]
+
+# ------------ RUN APPLICATION ------------ #
+CMD ["gunicorn", "-b", ":$PORT", "-c", "gunicorn.conf.py", "main:app"]
