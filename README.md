@@ -81,22 +81,23 @@
 graph LR
 A[Code Commit] --> B[Jenkins Build Trigger]
 B --> C{Project Type}
-C -->|Node| D1[NPM Install + Test]
-C -->|Java| D2[Maven Build + Test]
-C -->|Python| D3[Pip Install + Pytest]
+C -->|Node| D1[NPM Install and Test]
+C -->|Java| D2[Maven Build and Test]
+C -->|Python| D3[Pip Install and Pytest]
 
-D1 --> E[Trivy Scan + SonarQube]
+D1 --> E[Trivy Scan and SonarQube]
 D2 --> E
 D3 --> E
 
-E --> F[Docker Build + Tag]
+E --> F[Docker Build and Tag]
 F --> G[Trivy Image Scan]
 G --> H[Docker Push]
 
 H --> I[Kubernetes Deployment]
-I --> J[Monitoring (Grafana & Prometheus)]
+I --> J[Monitoring - Grafana and Prometheus]
 J --> K[Email Notification]
 ```
+
 
 
 ## 📧 Email Notifications
