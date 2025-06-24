@@ -75,7 +75,6 @@
 ![Plagiarism Report](screenshots/plagiarism-report.png)
 
 ---
-
 ## 🔁 Workflow Overview
 
 ```mermaid
@@ -95,11 +94,10 @@ F --> G[Trivy Image Scan]
 G --> H[Docker Push]
 
 H --> I[Kubernetes Deployment]
-I --> J[Monitoring (Grafana/Prometheus)]
+I --> J[Monitoring (Grafana & Prometheus)]
 J --> K[Email Notification]
 ```
 
----
 
 ## 📧 Email Notifications
 
