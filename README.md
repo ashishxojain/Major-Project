@@ -175,7 +175,7 @@ Email: [theharsh1028@gmail.com](mailto:ashishxojain@gmail.com)
 Email: [rishabh.kabra99@gmail.com](mailto:ashishxojain@gmail.com)  
 
 **Github**  
-GitHub: [@ashishxojain](https://github.com/ashishxojain)
+Link: [@ashishxojain](https://github.com/ashishxojain/Major-Project.git)
 ---
 
 
